@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Sprout Daycare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Little Sprout Daycare Home">
+        <img src="assets/white.png" alt="Little Sprout Daycare logo placeholder">
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <section class="gallery-card" id="gallery" aria-label="Daycare gallery">
+          <div class="gallery-track">
+            <article class="slide active">
+              <img src="assets/gallery-1.svg" alt="Children playing with blocks in a warm daycare room">
+              <div class="slide-caption">
+                <span>Hands-on play</span>
+                <p>Peaceful mornings filled with curiosity and cooperative discovery.</p>
+              </div>
+            </article>
+            <article class="slide">
+              <img src="assets/gallery-2.svg" alt="Children doing art activities at daycare">
+              <div class="slide-caption">
+                <span>Creative expression</span>
+                <p>Art tables, sensory activities, and room to imagine something new.</p>
+              </div>
+            </article>
+            <article class="slide">
+              <img src="assets/gallery-3.svg" alt="Children and teacher during circle time">
+              <div class="slide-caption">
+                <span>Circle time</span>
+                <p>Gentle routines that help little ones feel safe, seen, and confident.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="gallery-controls" aria-label="Slideshow controls">
+            <button class="gallery-button" type="button" data-direction="prev" aria-label="Previous slide">&#8592;</button>
+            <div class="gallery-dots" role="tablist" aria-label="Select slide">
+              <button class="dot active" type="button" aria-label="Show slide 1" aria-pressed="true"></button>
+              <button class="dot" type="button" aria-label="Show slide 2" aria-pressed="false"></button>
+              <button class="dot" type="button" aria-label="Show slide 3" aria-pressed="false"></button>
+            </div>
+            <button class="gallery-button" type="button" data-direction="next" aria-label="Next slide">&#8594;</button>
+          </div>
+        </section>
+
+        <div class="hero-copy">
+          <p class="eyebrow">Warm care, playful learning</p>
+          <h1>A gentle daycare home for bright little explorers.</h1>
+          <p class="hero-text">
+            Designed with a calm Montessori-inspired feeling, this homepage gives your friend
+            a soft, welcoming place to introduce their daycare, daily rhythm, and classroom joy.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Book a Tour</a>
+            <a class="button secondary" href="#programs">See Programs</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-grid" id="about">
+        <article class="info-card">
+          <p class="eyebrow">About us</p>
+          <h2>Built for comfort, wonder, and steady routines.</h2>
+          <p>
+            This layout borrows the airy, premium calm of the reference site and adapts it into a
+            softer daycare presentation with room for your friend's story, philosophy, and family message.
+          </p>
+        </article>
+
+        <article class="info-card accent-card" id="programs">
+          <p class="eyebrow">Programs</p>
+          <ul>
+            <li>Infant and toddler care</li>
+            <li>Play-based early learning</li>
+            <li>Outdoor exploration time</li>
+            <li>Healthy rhythm for meals and naps</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="contact-band" id="contact">
+        <div>
+          <p class="eyebrow">Families welcome</p>
+          <h2>Ready for the real daycare details later.</h2>
+        </div>
+        <a class="button primary" href="mailto:hello@littlesproutdaycare.com">hello@littlesproutdaycare.com</a>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
