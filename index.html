@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,38 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <nav class="history-nav" aria-label="Page navigation">
+    <button class="history-button menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu-panel" aria-label="Open site menu">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </button>
+    <div class="menu-panel" id="site-menu-panel">
+      <div class="menu-panel-scroll">
+        <a class="menu-link" href="index.html#top">Home</a>
+        <details class="menu-group">
+          <summary class="menu-group-summary">About Us</summary>
+          <div class="menu-sublink-list">
+            <a class="menu-link menu-sublink" href="vision.html">Vision</a>
+            <a class="menu-link menu-sublink" href="staff.html">Staff</a>
+            <a class="menu-link menu-sublink" href="gallery.html">Gallery</a>
+          </div>
+        </details>
+        <details class="menu-group">
+          <summary class="menu-group-summary">Programs</summary>
+          <div class="menu-sublink-list">
+            <a class="menu-link menu-sublink" href="infant-nido.html">Infant Nido</a>
+            <a class="menu-link menu-sublink" href="toddler-community.html">Toddler Community</a>
+            <a class="menu-link menu-sublink" href="practical-life-studio.html">Practical Life Studio</a>
+            <a class="menu-link menu-sublink" href="creative-discovery.html">Creative Discovery</a>
+            <a class="menu-link menu-sublink" href="outdoor-explorers.html">Outdoor Explorers</a>
+          </div>
+        </details>
+        <a class="menu-link" href="index.html#admission">Admission</a>
+        <a class="menu-link" href="index.html#schedule-tour">Schedule a Tour</a>
+      </div>
+    </div>
+  </nav>
   <div class="page-shell">
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Little Sprout Daycare Home">
@@ -18,14 +50,15 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#programs">Programs</a>
-        <a href="#gallery">Gallery</a>
+        <a href="#admission">Admission</a>
         <a href="#contact">Contact</a>
+        <a href="#schedule-tour">Schedule a Tour</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero">
-        <section class="gallery-card" id="gallery" aria-label="Daycare gallery">
+        <section class="gallery-card gallery-root" id="gallery" aria-label="Daycare gallery">
           <div class="gallery-track">
             <article class="slide active">
               <img src="assets/gallery-1.svg" alt="Children playing with blocks in a warm daycare room">
@@ -65,8 +98,8 @@
           <p class="eyebrow">Warm care, playful learning</p>
           <h1>A gentle daycare home for bright little explorers.</h1>
           <p class="hero-text">
-            Designed with a calm Montessori-inspired feeling, this homepage gives your friend
-            a soft, welcoming place to introduce their daycare, daily rhythm, and classroom joy.
+            A calm Montessori-inspired space for children to grow through practical life, creative
+            discovery, outdoor wonder, and steady daily rhythms that help families feel at home.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#contact">Book a Tour</a>
@@ -76,36 +109,126 @@
       </section>
 
       <section class="info-grid" id="about">
-        <article class="info-card">
+        <article class="info-card about-card">
           <p class="eyebrow">About us</p>
           <h2>Built for comfort, wonder, and steady routines.</h2>
           <p>
-            This layout borrows the airy, premium calm of the reference site and adapts it into a
-            softer daycare presentation with room for your friend's story, philosophy, and family message.
+            Our environment is designed to feel calm, nurturing, and deeply intentional. Each day
+            blends hands-on learning, caring guidance, and peaceful rhythms that support growing
+            independence.
           </p>
+          <div class="about-link-list">
+            <a class="program-link-card" href="vision.html">
+              <span class="program-link-title">Vision</span>
+              <span class="program-link-copy">A closer look at the calm, child-centered values that guide our school.</span>
+              <span class="program-link-arrow" aria-hidden="true">View page</span>
+            </a>
+            <a class="program-link-card" href="staff.html">
+              <span class="program-link-title">Staff</span>
+              <span class="program-link-copy">Meet the educators and caregivers who support each child with warmth.</span>
+              <span class="program-link-arrow" aria-hidden="true">View page</span>
+            </a>
+            <a class="program-link-card" href="gallery.html">
+              <span class="program-link-title">Gallery</span>
+              <span class="program-link-copy">Browse classroom moments and image links connected to our Instagram posts.</span>
+              <span class="program-link-arrow" aria-hidden="true">View page</span>
+            </a>
+          </div>
         </article>
 
-        <article class="info-card accent-card" id="programs">
+        <article class="info-card accent-card programs-card" id="programs">
           <p class="eyebrow">Programs</p>
-          <ul>
-            <li>Infant and toddler care</li>
-            <li>Play-based early learning</li>
-            <li>Outdoor exploration time</li>
-            <li>Healthy rhythm for meals and naps</li>
-          </ul>
+          <p class="program-intro">
+            Explore five program spaces, each with its own page, gallery, and story.
+          </p>
+          <div class="program-link-list">
+            <a class="program-link-card" href="infant-nido.html">
+              <span class="program-link-title">Infant Nido</span>
+              <span class="program-link-copy">Soft sensory care, bonding, and a peaceful first classroom.</span>
+              <span class="program-link-arrow" aria-hidden="true">View program</span>
+            </a>
+            <a class="program-link-card" href="toddler-community.html">
+              <span class="program-link-title">Toddler Community</span>
+              <span class="program-link-copy">Movement, language, and practical life for busy little hands.</span>
+              <span class="program-link-arrow" aria-hidden="true">View program</span>
+            </a>
+            <a class="program-link-card" href="practical-life-studio.html">
+              <span class="program-link-title">Practical Life Studio</span>
+              <span class="program-link-copy">Real work, concentration, and confidence through daily routines.</span>
+              <span class="program-link-arrow" aria-hidden="true">View program</span>
+            </a>
+            <a class="program-link-card" href="creative-discovery.html">
+              <span class="program-link-title">Creative Discovery</span>
+              <span class="program-link-copy">Art, sensory invitations, and expressive storytelling every week.</span>
+              <span class="program-link-arrow" aria-hidden="true">View program</span>
+            </a>
+            <a class="program-link-card" href="outdoor-explorers.html">
+              <span class="program-link-title">Outdoor Explorers</span>
+              <span class="program-link-copy">Garden walks, open-air play, and nature-rich observation.</span>
+              <span class="program-link-arrow" aria-hidden="true">View program</span>
+            </a>
+          </div>
         </article>
       </section>
 
-      <section class="contact-band" id="contact">
-        <div>
-          <p class="eyebrow">Families welcome</p>
-          <h2>Ready for the real daycare details later.</h2>
+      <section class="admission-band" id="admission" aria-label="Admission steps">
+        <p class="eyebrow section-title">Admission</p>
+        <div class="admission-accordion">
+          <details class="program-panel">
+            <summary>Step I</summary>
+            <p>
+              Submit an inquiry and share your child’s age, schedule needs, and anything you would
+              like us to know before your first conversation with our team.
+            </p>
+          </details>
+          <details class="program-panel">
+            <summary>Step II</summary>
+            <p>
+              Schedule a tour to visit the classroom, meet the staff, and learn more about our daily
+              rhythm, environment, and program fit for your family.
+            </p>
+          </details>
+          <details class="program-panel">
+            <summary>Step III</summary>
+            <p>
+              Complete enrollment paperwork and next-step details so we can prepare a smooth and
+              welcoming start for your child.
+            </p>
+          </details>
         </div>
-        <a class="button primary" href="mailto:hello@littlesproutdaycare.com">hello@littlesproutdaycare.com</a>
+      </section>
+
+      <section class="contact-band" id="contact">
+        <p class="eyebrow section-title">Contact us</p>
+        <p class="contact-line">seedlingsmontessorilab@gmail.com</p>
+        <p class="contact-line">37 Beaver, Irvine, CA 92604</p>
+        <div class="social-links" aria-label="Social media links">
+          <a class="social-link" href="#" aria-label="Facebook link placeholder">
+            <img src="https://cdn.simpleicons.org/facebook?viewbox=auto" alt="Facebook icon">
+          </a>
+          <a class="social-link" href="#" aria-label="Instagram link placeholder">
+            <img src="https://cdn.simpleicons.org/instagram?viewbox=auto" alt="Instagram icon">
+          </a>
+          <a class="social-link" href="#" aria-label="TikTok link placeholder">
+            <img src="https://cdn.simpleicons.org/tiktok?viewbox=auto" alt="TikTok icon">
+          </a>
+          <a class="social-link" href="#" aria-label="Rednote link placeholder">
+            <img src="https://cdn.simpleicons.org/xiaohongshu?viewbox=auto" alt="Rednote icon">
+          </a>
+        </div>
+      </section>
+
+      <section class="calendly-section" id="schedule-tour" aria-label="Schedule a visit">
+        <div class="calendly-header">
+          <p class="eyebrow section-title">Schedule a tour</p>
+          <p class="section-description">Choose a time that works for your family.</p>
+        </div>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/seedlingsmontessorilab/30min" style="min-width:320px;height:540px;"></div>
       </section>
     </main>
   </div>
 
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
   <script src="script.js"></script>
 </body>
 </html>
