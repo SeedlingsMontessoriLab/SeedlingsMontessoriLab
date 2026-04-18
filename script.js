@@ -1,5 +1,12 @@
 const galleries = Array.from(document.querySelectorAll(".gallery-root"));
 const menuToggles = Array.from(document.querySelectorAll(".menu-toggle"));
+const isSubpage = Boolean(document.querySelector(".subpage-shell"));
+
+if (isSubpage && !window.location.hash) {
+  window.addEventListener("pageshow", () => {
+    window.scrollTo(0, 0);
+  });
+}
 
 menuToggles.forEach((button) => {
   button.addEventListener("click", () => {
