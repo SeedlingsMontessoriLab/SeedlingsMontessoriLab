@@ -3,9 +3,18 @@ const menuToggles = Array.from(document.querySelectorAll(".menu-toggle"));
 const isSubpage = Boolean(document.querySelector(".subpage-shell"));
 
 if (isSubpage && !window.location.hash) {
-  window.addEventListener("pageshow", () => {
+  if ("scrollRestoration" in window.history) {
+    window.history.scrollRestoration = "manual";
+  }
+
+  const scrollToTop = () => {
     window.scrollTo(0, 0);
-  });
+    window.requestAnimationFrame(() => window.scrollTo(0, 0));
+  };
+
+  window.addEventListener("DOMContentLoaded", scrollToTop);
+  window.addEventListener("load", scrollToTop);
+  window.addEventListener("pageshow", scrollToTop);
 }
 
 menuToggles.forEach((button) => {
