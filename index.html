@@ -280,106 +280,34 @@
       <section class="detail-band" id="calendar" aria-label="School calendar">
         <div class="detail-band-header">
           <p class="eyebrow section-title">Calendar</p>
-          <p class="section-description">School closures and breaks for June-December 2026.</p>
+          <p class="section-description">Swipe by month. Crossed-out dates are no-school days from our calendar.</p>
         </div>
-        <div class="calendar-list">
-          <article class="detail-item">
-            <h3>June</h3>
-            <p>June 19, 2026 - Juneteenth: no school.</p>
-          </article>
-          <article class="detail-item">
-            <h3>July</h3>
-            <p>July 3, 2026 - Independence Day observed: no school. July 4 falls on a Saturday.</p>
-          </article>
-          <article class="detail-item">
-            <h3>August</h3>
-            <p>No national holidays. Regular preschool schedule.</p>
-          </article>
-          <article class="detail-item">
-            <h3>September</h3>
-            <p>September 7, 2026 - Labor Day: no school.</p>
-          </article>
-          <article class="detail-item">
-            <h3>October</h3>
-            <p>October 12, 2026 - Indigenous Peoples' Day / Columbus Day: no school.</p>
-          </article>
-          <article class="detail-item">
-            <h3>November</h3>
-            <p>November 11, 25, 26, and 27, 2026 - Veterans Day and Thanksgiving break: no school.</p>
-          </article>
-          <article class="detail-item">
-            <h3>December</h3>
-            <p>December 21-31, 2026 - Winter break. Christmas Day and New Year's Eve are included in winter break.</p>
-          </article>
+        <div class="calendar-gallery gallery-root" data-calendar-gallery data-autoplay="false" aria-label="Monthly school closure calendar">
+          <div class="calendar-gallery-track gallery-track" aria-live="polite"></div>
+          <div class="gallery-controls" aria-label="Calendar month controls">
+            <button class="gallery-button" type="button" data-direction="prev" aria-label="Previous month">&#8592;</button>
+            <div class="gallery-dots calendar-dots" role="tablist" aria-label="Select month"></div>
+            <button class="gallery-button" type="button" data-direction="next" aria-label="Next month">&#8594;</button>
+          </div>
+          <p class="calendar-legend">
+            <span class="calendar-legend-mark" aria-hidden="true">15</span>
+            Crossed-out date: no school / closed.
+          </p>
         </div>
       </section>
 
       <section class="detail-band" id="lunch-menu" aria-label="Sample lunch menu">
         <div class="detail-band-header">
           <p class="eyebrow section-title">Sample Lunch Menu</p>
-          <p class="section-description">A four-week sample of school-provided cross-cultural lunches.</p>
+          <p class="section-description">中英双语的一周午餐示例。A bilingual sample week of school-provided lunches.</p>
         </div>
-        <div class="program-accordion menu-accordion">
-          <details class="program-panel" open>
-            <summary>Week 1</summary>
-            <div class="menu-table-wrap">
-              <table class="menu-table">
-                <thead><tr><th>Day</th><th>Culture</th><th>Lunch Menu</th></tr></thead>
-                <tbody>
-                  <tr><td>Monday</td><td>Mexican</td><td>Bean & cheese quesadilla, corn, avocado slices</td></tr>
-                  <tr><td>Tuesday</td><td>Chinese</td><td>Steamed rice, scrambled egg with tomato, sauteed green beans, apple slices</td></tr>
-                  <tr><td>Wednesday</td><td>Korean</td><td>Mild bulgogi beef, rice, steamed broccoli, watermelon</td></tr>
-                  <tr><td>Thursday</td><td>American</td><td>Turkey sandwich, carrot sticks, yogurt, grapes</td></tr>
-                  <tr><td>Friday</td><td>Middle Eastern</td><td>Chicken shawarma, pita bread, cucumber yogurt dip, banana</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </details>
-          <details class="program-panel">
-            <summary>Week 2</summary>
-            <div class="menu-table-wrap">
-              <table class="menu-table">
-                <thead><tr><th>Day</th><th>Culture</th><th>Lunch Menu</th></tr></thead>
-                <tbody>
-                  <tr><td>Monday</td><td>Mexican</td><td>Chicken taco, black beans, corn, pineapple</td></tr>
-                  <tr><td>Tuesday</td><td>Chinese</td><td>Chicken fried rice, peas, mandarin oranges</td></tr>
-                  <tr><td>Wednesday</td><td>Korean</td><td>Japchae, spinach, pear slices</td></tr>
-                  <tr><td>Thursday</td><td>American</td><td>Mac & cheese, peas, apple slices</td></tr>
-                  <tr><td>Friday</td><td>Middle Eastern</td><td>Falafel, hummus, pita, cherry tomatoes, melon</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </details>
-          <details class="program-panel">
-            <summary>Week 3</summary>
-            <div class="menu-table-wrap">
-              <table class="menu-table">
-                <thead><tr><th>Day</th><th>Culture</th><th>Lunch Menu</th></tr></thead>
-                <tbody>
-                  <tr><td>Monday</td><td>Mexican</td><td>Rice & bean burrito, cucumber slices, mango</td></tr>
-                  <tr><td>Tuesday</td><td>Chinese</td><td>Chicken stir-fry, rice, bok choy, orange slices</td></tr>
-                  <tr><td>Wednesday</td><td>Korean</td><td>Chicken rice bowl, steamed zucchini, apple</td></tr>
-                  <tr><td>Thursday</td><td>American</td><td>Mini meatballs, pasta, green beans, banana</td></tr>
-                  <tr><td>Friday</td><td>Middle Eastern</td><td>Lentil soup, pita bread, yogurt, grapes</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </details>
-          <details class="program-panel">
-            <summary>Week 4</summary>
-            <div class="menu-table-wrap">
-              <table class="menu-table">
-                <thead><tr><th>Day</th><th>Culture</th><th>Lunch Menu</th></tr></thead>
-                <tbody>
-                  <tr><td>Monday</td><td>Mexican</td><td>Cheese enchilada, rice, beans, watermelon</td></tr>
-                  <tr><td>Tuesday</td><td>Chinese</td><td>Dumplings, steamed broccoli, rice, pear</td></tr>
-                  <tr><td>Wednesday</td><td>Korean</td><td>Mild kimchi fried rice, egg, cucumber, apple</td></tr>
-                  <tr><td>Thursday</td><td>American</td><td>Grilled chicken, mashed potatoes, carrots, berries</td></tr>
-                  <tr><td>Friday</td><td>Middle Eastern</td><td>Chicken kebab, rice, hummus, cucumber, orange</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </details>
+        <div class="menu-image-card">
+          <h3>本周菜单 | Weekly Menu</h3>
+          <img
+            class="menu-image"
+            src="images/lunch-menu-week.svg"
+            alt="本周菜单 Weekly Menu: Monday Mexican rice and bean burrito; Tuesday Chinese chicken stir-fry; Wednesday Korean chicken rice bowl; Thursday American mini meatballs; Friday Middle Eastern lentil soup."
+          >
         </div>
       </section>
 
