@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vision | Little Sprout Daycare</title>
+  <title>Vision | Seedlings Montessori Lab</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="program-body">
@@ -24,7 +24,7 @@
           <div class="menu-sublink-list">
             <a class="menu-link menu-sublink" href="vision.html">Vision</a>
             <a class="menu-link menu-sublink" href="staff.html">Staff</a>
-            <a class="menu-link menu-sublink" href="gallery.html">Gallery</a>
+            <a class="menu-link menu-sublink" href="gallery.html">Photo Gallery</a>
           </div>
         </details>
         <details class="menu-group">
@@ -32,33 +32,60 @@
           <div class="menu-sublink-list">
             <a class="menu-link menu-sublink" href="infant-nido.html">Infant Nido</a>
             <a class="menu-link menu-sublink" href="toddler-community.html">Toddler Community</a>
-            <a class="menu-link menu-sublink" href="practical-life-studio.html">Practical Life Studio</a>
-            <a class="menu-link menu-sublink" href="creative-discovery.html">Creative Discovery</a>
-            <a class="menu-link menu-sublink" href="outdoor-explorers.html">Outdoor Explorers</a>
+            <a class="menu-link menu-sublink" href="practical-life-studio.html">Primary</a>
+            <a class="menu-link menu-sublink" href="creative-discovery.html">Parent and Me</a>
+            <a class="menu-link menu-sublink" href="outdoor-explorers.html">Outdoor Explorer</a>
           </div>
         </details>
         <a class="menu-link" href="index.html#admission">Admission</a>
+        <a class="menu-link" href="index.html#tuition">Tuition</a>
+        <a class="menu-link" href="index.html#calendar">Calendar</a>
+        <a class="menu-link" href="index.html#lunch-menu">Lunch Menu</a>
         <a class="menu-link" href="index.html#schedule-tour">Schedule a Tour</a>
       </div>
     </div>
   </nav>
   <div class="page-shell subpage-shell">
     <header class="site-header program-header">
-      <a class="brand" href="index.html#top" aria-label="Little Sprout Daycare Home">
-        <img src="assets/white.png" alt="Little Sprout Daycare logo placeholder">
+      <a class="brand" href="index.html#top" aria-label="Seedlings Montessori Lab Home">
+        <img src="images/logo.png" alt="Seedlings Montessori Lab logo">
       </a>
     </header>
 
     <main class="program-page">
       <a class="page-back" href="index.html#about">Back to about us</a>
       <section class="vision-page">
-        <article class="gallery-card vision-hero-card">
-          <img class="vision-hero-image" src="assets/gallery-1.svg" alt="Prepared classroom with warm Montessori-inspired materials">
+        <article class="gallery-card gallery-root vision-hero-card vision-gallery" aria-label="Vision photo gallery">
+          <div class="gallery-track">
+            <article class="slide active">
+              <img src="images/Vision/1.jpg" alt="Prepared classroom with warm Montessori-inspired materials" loading="eager" decoding="async">
+              <div class="slide-caption">
+                <span>Prepared environment</span>
+                <p>A warm, beautiful space where independence and concentration can take root.</p>
+              </div>
+            </article>
+            <article class="slide">
+              <img src="images/Vision/2.jpg" alt="Children learning in a warm Montessori environment" loading="lazy" decoding="async">
+              <div class="slide-caption">
+                <span>Whole-child vision</span>
+                <p>Children grow through trust, hands-on work, nature, creativity, and community.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="gallery-controls" aria-label="Slideshow controls">
+            <button class="gallery-button" type="button" data-direction="prev" aria-label="Previous slide">&#8592;</button>
+            <div class="gallery-dots" role="tablist" aria-label="Select slide">
+              <button class="dot active" type="button" aria-label="Show slide 1" aria-pressed="true"></button>
+              <button class="dot" type="button" aria-label="Show slide 2" aria-pressed="false"></button>
+            </div>
+            <button class="gallery-button" type="button" data-direction="next" aria-label="Next slide">&#8594;</button>
+          </div>
         </article>
         <article class="program-copy-card vision-copy-card">
           <div class="program-accordion vision-accordion">
             <details class="program-panel" open>
-              <summary>T – Trust in self-directed learning</summary>
+              <summary>T - Trust in self-directed learning</summary>
               <p>
                 At the heart of our program is authentic Montessori practice, where children are
                 trusted as capable, self-motivated learners. Through uninterrupted work cycles and
@@ -66,7 +93,7 @@
               </p>
             </details>
             <details class="program-panel">
-              <summary>H – Hands-on food preparation & community care</summary>
+              <summary>H - Hands-on food preparation & community care</summary>
               <p>
                 Food is a powerful connector in our environment. Children wash, slice, bake,
                 stir-fry, and prepare food together, building coordination, patience, gratitude,
@@ -74,7 +101,7 @@
               </p>
             </details>
             <details class="program-panel">
-              <summary>R – Rooted in nature-based living</summary>
+              <summary>R - Rooted in nature-based living</summary>
               <p>
                 Our living environment includes gardens, fruit trees, flowers, and small animals.
                 Children plant, harvest, and care for life throughout the seasons, developing
@@ -82,7 +109,7 @@
               </p>
             </details>
             <details class="program-panel">
-              <summary>I – Integrated music, movement & mindfulness</summary>
+              <summary>I - Integrated music, movement & mindfulness</summary>
               <p>
                 Live piano music, rhythm play, yoga, dance, and storytelling are woven into the daily
                 rhythm of school. These experiences support coordination, emotional regulation,
@@ -90,7 +117,7 @@
               </p>
             </details>
             <details class="program-panel">
-              <summary>V – Visual & textile arts for creative expression</summary>
+              <summary>V - Visual & textile arts for creative expression</summary>
               <p>
                 Children explore purposeful artistic work through weaving, sewing, beading,
                 design, and hands-on visual art. These processes build patience, precision,
@@ -98,7 +125,7 @@
               </p>
             </details>
             <details class="program-panel">
-              <summary>E – Empathy & social grace in a living community</summary>
+              <summary>E - Empathy & social grace in a living community</summary>
               <p>
                 In our mixed-age, collaborative environment, children practice kindness, patience,
                 cooperation, and communication every day. These lived experiences shape not only how

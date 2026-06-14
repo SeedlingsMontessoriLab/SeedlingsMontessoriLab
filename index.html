@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Little Sprout Daycare</title>
+  <title>Seedlings Montessori Lab</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
           <div class="menu-sublink-list">
             <a class="menu-link menu-sublink" href="vision.html">Vision</a>
             <a class="menu-link menu-sublink" href="staff.html">Staff</a>
-            <a class="menu-link menu-sublink" href="gallery.html">Gallery</a>
+            <a class="menu-link menu-sublink" href="gallery.html">Photo Gallery</a>
           </div>
         </details>
         <details class="menu-group">
@@ -32,24 +32,29 @@
           <div class="menu-sublink-list">
             <a class="menu-link menu-sublink" href="infant-nido.html">Infant Nido</a>
             <a class="menu-link menu-sublink" href="toddler-community.html">Toddler Community</a>
-            <a class="menu-link menu-sublink" href="practical-life-studio.html">Practical Life Studio</a>
-            <a class="menu-link menu-sublink" href="creative-discovery.html">Creative Discovery</a>
-            <a class="menu-link menu-sublink" href="outdoor-explorers.html">Outdoor Explorers</a>
+            <a class="menu-link menu-sublink" href="practical-life-studio.html">Primary</a>
+            <a class="menu-link menu-sublink" href="creative-discovery.html">Parent and Me</a>
+            <a class="menu-link menu-sublink" href="outdoor-explorers.html">Outdoor Explorer</a>
           </div>
         </details>
         <a class="menu-link" href="index.html#admission">Admission</a>
+        <a class="menu-link" href="index.html#tuition">Tuition</a>
+        <a class="menu-link" href="index.html#calendar">Calendar</a>
+        <a class="menu-link" href="index.html#lunch-menu">Lunch Menu</a>
         <a class="menu-link" href="index.html#schedule-tour">Schedule a Tour</a>
       </div>
     </div>
   </nav>
   <div class="page-shell">
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Little Sprout Daycare Home">
-        <img src="assets/white.png" alt="Little Sprout Daycare logo placeholder">
+      <a class="brand" href="#top" aria-label="Seedlings Montessori Lab Home">
+        <img src="images/logo.png" alt="Seedlings Montessori Lab logo">
       </a>
       <nav class="site-nav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#programs">Programs</a>
+        <a href="#tuition">Tuition</a>
+        <a href="#calendar">Calendar</a>
         <a href="#admission">Admission</a>
         <a href="#contact">Contact</a>
         <a href="#schedule-tour">Schedule a Tour</a>
@@ -58,27 +63,55 @@
 
     <main id="top">
       <section class="hero">
-        <section class="gallery-card gallery-root" id="gallery" aria-label="Daycare gallery">
+        <section class="gallery-card gallery-root" id="gallery" aria-label="Daycare photo gallery">
           <div class="gallery-track">
             <article class="slide active">
-              <img src="assets/gallery-1.svg" alt="Children playing with blocks in a warm daycare room">
+              <img src="images/首页画廊/1.jpg" alt="Children exploring a prepared Montessori classroom" loading="eager" decoding="async">
               <div class="slide-caption">
                 <span>Hands-on play</span>
                 <p>Peaceful mornings filled with curiosity and cooperative discovery.</p>
               </div>
             </article>
             <article class="slide">
-              <img src="assets/gallery-2.svg" alt="Children doing art activities at daycare">
+              <img src="images/首页画廊/2.jpg" alt="Children doing Montessori activities together" loading="lazy" decoding="async">
               <div class="slide-caption">
                 <span>Creative expression</span>
                 <p>Art tables, sensory activities, and room to imagine something new.</p>
               </div>
             </article>
             <article class="slide">
-              <img src="assets/gallery-3.svg" alt="Children and teacher during circle time">
+              <img src="images/首页画廊/3.jpg" alt="Teacher guiding children in a warm learning space" loading="lazy" decoding="async">
               <div class="slide-caption">
                 <span>Circle time</span>
                 <p>Gentle routines that help little ones feel safe, seen, and confident.</p>
+              </div>
+            </article>
+            <article class="slide">
+              <img src="images/首页画廊/4.jpg" alt="Children working with classroom materials" loading="lazy" decoding="async">
+              <div class="slide-caption">
+                <span>Prepared environment</span>
+                <p>Low shelves, calm rhythms, and meaningful choices support independence.</p>
+              </div>
+            </article>
+            <article class="slide">
+              <img src="images/首页画廊/5.png" alt="Montessori classroom detail at Seedlings Montessori Lab" loading="lazy" decoding="async">
+              <div class="slide-caption">
+                <span>Beautiful details</span>
+                <p>Thoughtful materials invite focus, care, and joyful repetition.</p>
+              </div>
+            </article>
+            <article class="slide">
+              <img src="images/首页画廊/6.jpg" alt="Children learning through play and movement" loading="lazy" decoding="async">
+              <div class="slide-caption">
+                <span>Whole-child growth</span>
+                <p>Movement, conversation, and hands-on work help children grow with confidence.</p>
+              </div>
+            </article>
+            <article class="slide">
+              <img src="images/首页画廊/7.jpg" alt="Warm Montessori classroom moment" loading="lazy" decoding="async">
+              <div class="slide-caption">
+                <span>Daily connection</span>
+                <p>A small community where children are known, respected, and encouraged.</p>
               </div>
             </article>
           </div>
@@ -89,6 +122,10 @@
               <button class="dot active" type="button" aria-label="Show slide 1" aria-pressed="true"></button>
               <button class="dot" type="button" aria-label="Show slide 2" aria-pressed="false"></button>
               <button class="dot" type="button" aria-label="Show slide 3" aria-pressed="false"></button>
+              <button class="dot" type="button" aria-label="Show slide 4" aria-pressed="false"></button>
+              <button class="dot" type="button" aria-label="Show slide 5" aria-pressed="false"></button>
+              <button class="dot" type="button" aria-label="Show slide 6" aria-pressed="false"></button>
+              <button class="dot" type="button" aria-label="Show slide 7" aria-pressed="false"></button>
             </div>
             <button class="gallery-button" type="button" data-direction="next" aria-label="Next slide">&#8594;</button>
           </div>
@@ -103,7 +140,8 @@
             community that nurtures independence, creativity, and critical thinking.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#contact">Book a Tour</a>
+            <a class="button primary" href="#schedule-tour">Book a Tour</a>
+            <a class="button secondary" href="#contact">Contact Us</a>
             <a class="button secondary" href="#programs">See Programs</a>
           </div>
         </div>
@@ -130,7 +168,7 @@
               <span class="program-link-arrow" aria-hidden="true">View page</span>
             </a>
             <a class="program-link-card" href="gallery.html">
-              <span class="program-link-title">Gallery</span>
+              <span class="program-link-title">Photo Gallery</span>
               <span class="program-link-copy">Browse classroom moments and image links connected to our Instagram posts.</span>
               <span class="program-link-arrow" aria-hidden="true">View page</span>
             </a>
@@ -154,18 +192,18 @@
               <span class="program-link-arrow" aria-hidden="true">View program</span>
             </a>
             <a class="program-link-card" href="practical-life-studio.html">
-              <span class="program-link-title">Practical Life Studio</span>
-              <span class="program-link-copy">Real work with food, tools, and care routines that build confidence and concentration.</span>
+              <span class="program-link-title">Primary</span>
+              <span class="program-link-copy">A 2.5-6 year old classroom for independence, concentration, early academics, and community care.</span>
               <span class="program-link-arrow" aria-hidden="true">View program</span>
             </a>
             <a class="program-link-card" href="creative-discovery.html">
-              <span class="program-link-title">Creative Discovery</span>
-              <span class="program-link-copy">Music, movement, art, and textile work that turn creativity into meaningful expression.</span>
+              <span class="program-link-title">Parent and Me</span>
+              <span class="program-link-copy">A guided parent-child experience with observation, practical tools, and Montessori education for home.</span>
               <span class="program-link-arrow" aria-hidden="true">View program</span>
             </a>
             <a class="program-link-card" href="outdoor-explorers.html">
-              <span class="program-link-title">Outdoor Explorers</span>
-              <span class="program-link-copy">Gardens, harvests, animals, and outdoor discovery woven into everyday learning.</span>
+              <span class="program-link-title">Outdoor Explorer</span>
+              <span class="program-link-copy">Sand, water, gardening, woodworking, outdoor art, and movement in a prepared nature atelier.</span>
               <span class="program-link-arrow" aria-hidden="true">View program</span>
             </a>
           </div>
@@ -178,8 +216,8 @@
           <details class="program-panel">
             <summary>Step I</summary>
             <p>
-              Reach out to begin the conversation and share your child’s age, schedule needs, and
-              any questions you have about Montessori, our environment, or your family’s transition.
+              Reach out to begin the conversation and share your child's age, schedule needs, and
+              any questions you have about Montessori, our environment, or your family's transition.
             </p>
           </details>
           <details class="program-panel">
@@ -195,6 +233,152 @@
               Complete enrollment and next-step details so we can prepare a smooth, individualized,
               and welcoming start for your child and family.
             </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="detail-band" id="tuition" aria-label="Tuition and fees">
+        <div class="detail-band-header">
+          <p class="eyebrow section-title">Tuition</p>
+          <p class="section-description">2026-2027 monthly tuition and enrollment fees.</p>
+        </div>
+        <div class="detail-grid tuition-grid">
+          <article class="detail-item">
+            <h3>Infant & Toddler</h3>
+            <p class="detail-note">12-30 months</p>
+            <ul class="price-list">
+              <li><span>8:00 AM-12:30 PM</span><strong>$2,000 / month</strong><em>5 half days</em></li>
+              <li><span>8:00 AM-3:30 PM</span><strong>$2,200 / month</strong><em>5 full days</em></li>
+              <li><span>8:00 AM-4:30 PM</span><strong>$2,400 / month</strong><em>5 full days</em></li>
+              <li><span>7:00 AM-6:00 PM</span><strong>$2,600 / month</strong><em>5 full days</em></li>
+            </ul>
+          </article>
+          <article class="detail-item">
+            <h3>Preschool</h3>
+            <p class="detail-note">2.5-6 years</p>
+            <ul class="price-list">
+              <li><span>8:00 AM-12:30 PM</span><strong>$1,800 / month</strong><em>5 half days</em></li>
+              <li><span>8:00 AM-3:30 PM</span><strong>$2,000 / month</strong><em>5 full days</em></li>
+              <li><span>8:00 AM-4:30 PM</span><strong>$2,200 / month</strong><em>5 full days</em></li>
+              <li><span>7:00 AM-6:00 PM</span><strong>$2,400 / month</strong><em>5 full days</em></li>
+            </ul>
+          </article>
+          <article class="detail-item">
+            <h3>Fees & Policy</h3>
+            <ul class="detail-list">
+              <li>Hourly occasional daycare: $15 / hour.</li>
+              <li>Enrollment fee: $225 for Infant, Toddler, and Primary.</li>
+              <li>Kindergarten enrollment fee: $350.</li>
+              <li>5% sibling discount applied to the lower tuition.</li>
+              <li>Tuition is collected by ACH debit through Tuition Express.</li>
+              <li>A 1-month written notice is required for withdrawal.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="detail-band" id="calendar" aria-label="School calendar">
+        <div class="detail-band-header">
+          <p class="eyebrow section-title">Calendar</p>
+          <p class="section-description">School closures and breaks for June-December 2026.</p>
+        </div>
+        <div class="calendar-list">
+          <article class="detail-item">
+            <h3>June</h3>
+            <p>June 19, 2026 - Juneteenth: no school.</p>
+          </article>
+          <article class="detail-item">
+            <h3>July</h3>
+            <p>July 3, 2026 - Independence Day observed: no school. July 4 falls on a Saturday.</p>
+          </article>
+          <article class="detail-item">
+            <h3>August</h3>
+            <p>No national holidays. Regular preschool schedule.</p>
+          </article>
+          <article class="detail-item">
+            <h3>September</h3>
+            <p>September 7, 2026 - Labor Day: no school.</p>
+          </article>
+          <article class="detail-item">
+            <h3>October</h3>
+            <p>October 12, 2026 - Indigenous Peoples' Day / Columbus Day: no school.</p>
+          </article>
+          <article class="detail-item">
+            <h3>November</h3>
+            <p>November 11, 25, 26, and 27, 2026 - Veterans Day and Thanksgiving break: no school.</p>
+          </article>
+          <article class="detail-item">
+            <h3>December</h3>
+            <p>December 21-31, 2026 - Winter break. Christmas Day and New Year's Eve are included in winter break.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="detail-band" id="lunch-menu" aria-label="Sample lunch menu">
+        <div class="detail-band-header">
+          <p class="eyebrow section-title">Sample Lunch Menu</p>
+          <p class="section-description">A four-week sample of school-provided cross-cultural lunches.</p>
+        </div>
+        <div class="program-accordion menu-accordion">
+          <details class="program-panel" open>
+            <summary>Week 1</summary>
+            <div class="menu-table-wrap">
+              <table class="menu-table">
+                <thead><tr><th>Day</th><th>Culture</th><th>Lunch Menu</th></tr></thead>
+                <tbody>
+                  <tr><td>Monday</td><td>Mexican</td><td>Bean & cheese quesadilla, corn, avocado slices</td></tr>
+                  <tr><td>Tuesday</td><td>Chinese</td><td>Steamed rice, scrambled egg with tomato, sauteed green beans, apple slices</td></tr>
+                  <tr><td>Wednesday</td><td>Korean</td><td>Mild bulgogi beef, rice, steamed broccoli, watermelon</td></tr>
+                  <tr><td>Thursday</td><td>American</td><td>Turkey sandwich, carrot sticks, yogurt, grapes</td></tr>
+                  <tr><td>Friday</td><td>Middle Eastern</td><td>Chicken shawarma, pita bread, cucumber yogurt dip, banana</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
+          <details class="program-panel">
+            <summary>Week 2</summary>
+            <div class="menu-table-wrap">
+              <table class="menu-table">
+                <thead><tr><th>Day</th><th>Culture</th><th>Lunch Menu</th></tr></thead>
+                <tbody>
+                  <tr><td>Monday</td><td>Mexican</td><td>Chicken taco, black beans, corn, pineapple</td></tr>
+                  <tr><td>Tuesday</td><td>Chinese</td><td>Chicken fried rice, peas, mandarin oranges</td></tr>
+                  <tr><td>Wednesday</td><td>Korean</td><td>Japchae, spinach, pear slices</td></tr>
+                  <tr><td>Thursday</td><td>American</td><td>Mac & cheese, peas, apple slices</td></tr>
+                  <tr><td>Friday</td><td>Middle Eastern</td><td>Falafel, hummus, pita, cherry tomatoes, melon</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
+          <details class="program-panel">
+            <summary>Week 3</summary>
+            <div class="menu-table-wrap">
+              <table class="menu-table">
+                <thead><tr><th>Day</th><th>Culture</th><th>Lunch Menu</th></tr></thead>
+                <tbody>
+                  <tr><td>Monday</td><td>Mexican</td><td>Rice & bean burrito, cucumber slices, mango</td></tr>
+                  <tr><td>Tuesday</td><td>Chinese</td><td>Chicken stir-fry, rice, bok choy, orange slices</td></tr>
+                  <tr><td>Wednesday</td><td>Korean</td><td>Chicken rice bowl, steamed zucchini, apple</td></tr>
+                  <tr><td>Thursday</td><td>American</td><td>Mini meatballs, pasta, green beans, banana</td></tr>
+                  <tr><td>Friday</td><td>Middle Eastern</td><td>Lentil soup, pita bread, yogurt, grapes</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
+          <details class="program-panel">
+            <summary>Week 4</summary>
+            <div class="menu-table-wrap">
+              <table class="menu-table">
+                <thead><tr><th>Day</th><th>Culture</th><th>Lunch Menu</th></tr></thead>
+                <tbody>
+                  <tr><td>Monday</td><td>Mexican</td><td>Cheese enchilada, rice, beans, watermelon</td></tr>
+                  <tr><td>Tuesday</td><td>Chinese</td><td>Dumplings, steamed broccoli, rice, pear</td></tr>
+                  <tr><td>Wednesday</td><td>Korean</td><td>Mild kimchi fried rice, egg, cucumber, apple</td></tr>
+                  <tr><td>Thursday</td><td>American</td><td>Grilled chicken, mashed potatoes, carrots, berries</td></tr>
+                  <tr><td>Friday</td><td>Middle Eastern</td><td>Chicken kebab, rice, hummus, cucumber, orange</td></tr>
+                </tbody>
+              </table>
+            </div>
           </details>
         </div>
       </section>
